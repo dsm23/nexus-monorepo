@@ -1,4 +1,4 @@
-name: Lint check
+name: Hadolint check
 
 on:
   push:
@@ -16,8 +16,11 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  hadolint-shard:
     runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        apps: [web]
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
@@ -29,8 +32,15 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Node setup
-        uses: ./.github/actions/setup
+      - name: Hadolint
+        uses: hadolint/hadolint-action@2332a7b74a6de0dda2e2221d575162eba76ba5e5 # v3.3.0
+        with:
+          dockerfile: ./apps/${{ matrix.apps }}/Dockerfile
 
-      - name: Lint
-        run: pnpm lint
+  hadolint:
+    runs-on: ubuntu-24.04
+    needs:
+      - hadolint-shard
+    steps:
+      - if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}
+        run: exit 1
