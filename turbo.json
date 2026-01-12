@@ -17,8 +17,9 @@
       "outputs": ["coverage/**"],
       "dependsOn": []
     },
-    "lint": {
-      "dependsOn": ["^build", "^lint"]
+    "lint": {},
+    "lint:lint-staged": {
+      "dependsOn": ["^lint"]
     },
     "check-types": {
       "dependsOn": ["^build", "^check-types"]
