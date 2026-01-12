@@ -9,7 +9,7 @@ pre-commit:
       glob: "*.css"
 
     eslint:
-      run: ./node_modules/.bin/eslint {staged_files}
+      run: ./node_modules/.bin/turbo run lint:lint-staged -- {staged_files}
       glob:
         - "*.ts"
         - "*.js"
