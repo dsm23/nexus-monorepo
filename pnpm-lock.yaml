@@ -183,9 +183,6 @@ importers:
 
   packages/stylelint-config:
     devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       stylelint:
         specifier: 16.26.1
         version: 16.26.1(typescript@5.9.3)
