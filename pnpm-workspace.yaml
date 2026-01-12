@@ -3,6 +3,17 @@ blockExoticSubdeps: true
 onlyBuiltDependencies:
   - lefthook
 
+packages:
+  - "apps/*"
+  - "packages/*"
+
+publicHoistPattern:
+  - "*eslint*"
+  - "*playwright*"
+  - "*prettier*"
+  - "*storybook*"
+  - "*stylelint*"
+
 savePrefix: ""
 
 sideEffectsCache: false

@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+out/
+
+# Turbo
+.turbo
 
 # Lefthook
 lefthook-local.yml

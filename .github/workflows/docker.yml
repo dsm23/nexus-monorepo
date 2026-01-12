@@ -18,10 +18,14 @@ permissions:
   contents: read
 
 jobs:
-  amd64:
+  amd64-shard:
     runs-on: ubuntu-24.04
     permissions:
       packages: write
+    strategy:
+      matrix:
+        apps:
+          - web
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
@@ -45,7 +49,15 @@ jobs:
         uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0
         with:
           context: .
-          file: Dockerfile
+          file: apps/${{ matrix.apps }}/Dockerfile
           platforms: linux/amd64
           push: ${{ github.ref_name == github.event.repository.default_branch }}
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/${{ matrix.apps }}:latest
+
+  amd64:
+    runs-on: ubuntu-24.04
+    needs:
+      - amd64-shard
+    steps:
+      - if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}
+        run: exit 1

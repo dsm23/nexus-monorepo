@@ -11,6 +11,7 @@ pull_request_rules:
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
+      - check-success=hadolint
       - check-success=lint
       - check-success=pr-title
       - check-success=renovate
@@ -30,6 +31,7 @@ pull_request_rules:
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
+      - check-success=hadolint
       - check-success=lint
       - check-success=pr-title
       - check-success=renovate
@@ -53,6 +55,7 @@ pull_request_rules:
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
+      - check-success=hadolint
       - check-success=lint
       - check-success=pr-title
       - check-success=renovate

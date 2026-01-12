@@ -1,6 +1,5 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:b6afd42430b15f2d2a4c5a02b919e98a525b785b1aaff16747d2f623364e39b6
 
-# Stage 1: Base image for dependencies and build
 FROM node:24.12.0-alpine@sha256:c921b97d4b74f51744057454b306b418cf693865e73b8100559189605f6955b8 AS base
 
 # corepack is broken https://github.com/nodejs/corepack/issues/612
@@ -8,39 +7,45 @@ FROM node:24.12.0-alpine@sha256:c921b97d4b74f51744057454b306b418cf693865e73b8100
 # TODO: re-add corepack after it's been removed
 # RUN npm install -g corepack@latest
 
-# Install dependencies only when needed
-FROM base AS deps
+# renovate: datasource=npm depName=turbo
+ARG TURBO_VERSION="2.7.3"
+
+FROM base AS builder
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
+RUN apk add --no-cache gcompat=1.1.0-r4
+WORKDIR /app
+
+RUN npm i -g "turbo@$TURBO_VERSION"
+COPY . .
+
+# Generate a partial monorepo with a pruned lockfile for a target workspace.
+# Assuming "web" is the name entered in the project's package.json: { name: "web" }
+RUN turbo prune web --docker
+
+# Add lockfile and package.json's of isolated subworkspace
+FROM base AS installer
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
 RUN apk add --no-cache gcompat=1.1.0-r4
 WORKDIR /app
 
 ENV LEFTHOOK=0
 
-# Copy package manager lock files
-COPY package.json pnpm-lock.yaml ./
+# First install the dependencies (as they change less often)
+COPY --from=builder /app/out/json/ .
 
-# Install dependencies
 RUN corepack enable pnpm \
   && pnpm install --frozen-lockfile
 
-# Stage 2: Build stage
-FROM base AS builder
+# Build the project
+COPY --from=builder /app/out/full/ .
+RUN pnpm run build
 
-WORKDIR /app
-
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-
-# Build the Vite project
-RUN corepack enable pnpm \
-  && pnpm run build
-
-# Stage 3: Production image
+# Final Stage: Production image
 FROM nginx:1.29.4-alpine-slim@sha256:fc0cff8d49db19250104d2fba8bd1ee3fc2a09ed8163de582804e5d137df7821 AS runner
 
 # Copy built static files to nginx's default public folder
-COPY --from=builder /app/dist /usr/share/nginx/html
-COPY --from=builder /app/nginx/nginx.conf /etc/nginx/templates/default.conf.template
+COPY --from=installer /app/apps/web/dist /usr/share/nginx/html
+COPY --from=installer /app/apps/web/nginx/nginx.conf /etc/nginx/templates/default.conf.template
 
 # implement changes required to run NGINX as an unprivileged user
 RUN sed -i '/user  nginx;/d' /etc/nginx/nginx.conf \
