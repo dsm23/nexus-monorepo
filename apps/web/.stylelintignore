@@ -1,0 +1,15 @@
+# Dist Folder
+dist
+
+# Public Folder
+public
+
+# Jest
+coverage
+
+# Storybook
+storybook-static
+
+# Playwright
+playwright-report
+test-results
