@@ -1,0 +1,19 @@
+{
+  "name": "@repo/stylelint-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "stylelint": "16.26.1",
+    "stylelint-config-standard": "39.0.1",
+    "stylelint-order": "7.0.1",
+    "stylelint-selector-bem-pattern": "4.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

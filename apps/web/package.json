@@ -11,7 +11,9 @@
     "build": "tsc -b && vite build",
     "fmt": "prettier . --write",
     "fmt.check": "prettier . --check",
-    "lint": "eslint .",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input",
+    "lint": "run-p lint:js lint:css",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -45,6 +47,7 @@
     "@commitlint/types": "20.2.0",
     "@eslint/js": "9.39.2",
     "@ianvs/prettier-plugin-sort-imports": "4.7.0",
+    "@repo/stylelint-config": "workspace:*",
     "@total-typescript/ts-reset": "0.6.1",
     "@types/node": "24.10.4",
     "@types/react": "19.2.7",
@@ -56,6 +59,7 @@
     "eslint-plugin-react-refresh": "0.4.26",
     "globals": "17.0.0",
     "lefthook": "2.0.13",
+    "npm-run-all2": "8.0.4",
     "prettier": "3.7.4",
     "prettier-plugin-css-order": "2.2.0",
     "prettier-plugin-tailwindcss": "0.7.2",
