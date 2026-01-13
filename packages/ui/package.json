@@ -29,6 +29,16 @@
         "default": "./dist/cjs/button.cjs"
       }
     },
+    "./components/checkbox": {
+      "import": {
+        "types": "./dist/es/checkbox.d.ts",
+        "default": "./dist/es/checkbox.js"
+      },
+      "require": {
+        "types": "./dist/cjs/checkbox.d.cts",
+        "default": "./dist/cjs/checkbox.cjs"
+      }
+    },
     "./lib/utils": {
       "import": {
         "types": "./dist/es/utils.d.ts",
@@ -47,6 +57,7 @@
     "lint": "run-p lint:bunchee"
   },
   "dependencies": {
+    "@radix-ui/react-checkbox": "1.3.3",
     "@radix-ui/react-slot": "1.2.4",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
