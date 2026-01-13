@@ -23,6 +23,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:packages/typescript-config
+      lefthook:
+        specifier: 2.0.13
+        version: 2.0.13
       prettier:
         specifier: 3.7.4
         version: 3.7.4
@@ -117,9 +120,6 @@ importers:
       globals:
         specifier: 17.0.0
         version: 17.0.0
-      lefthook:
-        specifier: 2.0.13
-        version: 2.0.13
       npm-run-all2:
         specifier: 8.0.4
         version: 8.0.4
