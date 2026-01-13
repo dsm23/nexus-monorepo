@@ -3,7 +3,7 @@
 @import "@repo/tailwind-config/globals.css";
 
 @source "../**/*.{ts,tsx}";
-@source "../../../../packages/ui/src/**/*.{ts,tsx}";
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
 
 @layer base {
   /* YouTube-like dark mode improvements */

@@ -9,6 +9,16 @@
     "dist"
   ],
   "exports": {
+    "./components/badge": {
+      "import": {
+        "types": "./dist/es/badge.d.ts",
+        "default": "./dist/es/badge.js"
+      },
+      "require": {
+        "types": "./dist/cjs/badge.d.cts",
+        "default": "./dist/cjs/badge.cjs"
+      }
+    },
     "./components/button": {
       "import": {
         "types": "./dist/es/button.d.ts",
