@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import {
   ArrowLeft,
   Filter,
@@ -15,7 +16,6 @@ import { Header } from "~/components/Header";
 import { OrganizationChart } from "~/components/OrganizationChart";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
 import { Badge } from "~/components/ui/badge";
-import { Button } from "~/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
 import {

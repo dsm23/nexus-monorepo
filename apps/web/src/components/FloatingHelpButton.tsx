@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import {
   AlertCircle,
   FileText,
@@ -10,7 +11,6 @@ import {
   X,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "~/components/ui/button";
 import { Card, CardContent } from "~/components/ui/card";
 import {
   Dialog,

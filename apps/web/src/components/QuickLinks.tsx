@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { DragEvent, FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import {
   FileText,
   Globe,
@@ -11,7 +12,6 @@ import {
   Settings,
   Trash2,
 } from "lucide-react";
-import { Button } from "~/components/ui/button";
 import {
   Card,
   CardContent,

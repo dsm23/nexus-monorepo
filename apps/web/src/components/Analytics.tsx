@@ -1,8 +1,8 @@
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import { ArrowRight, TrendingDown, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
-import { Button } from "~/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { activityData, analyticsMetrics } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";

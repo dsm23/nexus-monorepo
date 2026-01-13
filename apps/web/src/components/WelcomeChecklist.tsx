@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import { Sparkles, X } from "lucide-react";
-import { Button } from "~/components/ui/button";
 import {
   Card,
   CardContent,

@@ -1,6 +1,6 @@
 import type { FunctionComponent, ReactNode } from "react";
+import { Button } from "@repo/ui/components/button";
 import { GripVertical } from "lucide-react";
-import { Button } from "~/components/ui/button";
 import { useDragAndDrop } from "~/hooks/useDragAndDrop";
 
 interface DraggableCardProps {

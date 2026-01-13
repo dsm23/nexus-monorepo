@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
+import { Button } from "@repo/ui/components/button";
 import { Moon, Sun } from "lucide-react";
-import { Button } from "~/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,

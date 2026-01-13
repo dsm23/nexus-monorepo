@@ -1,0 +1,62 @@
+{
+  "name": "@repo/ui",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "sideEffects": false,
+  "files": [
+    "dist/**",
+    "dist"
+  ],
+  "exports": {
+    "./components/button": {
+      "import": {
+        "types": "./dist/es/button.d.ts",
+        "default": "./dist/es/button.js"
+      },
+      "require": {
+        "types": "./dist/cjs/button.d.cts",
+        "default": "./dist/cjs/button.cjs"
+      }
+    },
+    "./lib/utils": {
+      "import": {
+        "types": "./dist/es/utils.d.ts",
+        "default": "./dist/es/utils.js"
+      },
+      "require": {
+        "types": "./dist/cjs/utils.d.cts",
+        "default": "./dist/cjs/utils.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "bunchee",
+    "dev": "bunchee --watch",
+    "lint:bunchee": "bunchee lint",
+    "lint": "run-p lint:bunchee"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "1.2.4",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "0.562.0",
+    "tailwind-merge": "3.4.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "24.10.4",
+    "bunchee": "6.9.3",
+    "npm-run-all2": "8.0.4",
+    "prettier-plugin-css-order": "2.2.0",
+    "prettier-plugin-tailwindcss": "0.7.2",
+    "typescript": "5.9.3",
+    "vite-tsconfig-paths": "6.0.3"
+  },
+  "peerDependencies": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  }
+}

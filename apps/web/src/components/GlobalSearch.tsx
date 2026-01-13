@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { FormEventHandler, FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import { Command, Search } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "~/components/ui/button";
 import {
   Dialog,
   DialogContent,

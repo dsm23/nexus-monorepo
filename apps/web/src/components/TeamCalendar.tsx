@@ -1,8 +1,8 @@
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import { ArrowRight, Award, Cake, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Badge } from "~/components/ui/badge";
-import { Button } from "~/components/ui/button";
 import {
   Card,
   CardContent,
