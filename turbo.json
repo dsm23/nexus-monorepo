@@ -28,6 +28,9 @@
       "dependsOn": ["^build"],
       "cache": false,
       "persistent": true
+    },
+    "transit": {
+      "dependsOn": ["^transit"]
     }
   }
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import {
   AlertCircle,
   ArrowLeft,
@@ -18,7 +19,6 @@ import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
 import { Badge } from "~/components/ui/badge";
-import { Button } from "~/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import {
   Dialog,

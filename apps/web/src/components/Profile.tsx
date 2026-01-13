@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import {
   Bell,
   FileText,
@@ -10,7 +11,6 @@ import {
   Shield,
   User,
 } from "lucide-react";
-import { Button } from "~/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -1,8 +1,8 @@
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import { AlertCircle, ArrowRight, Calendar, Clock, Plane } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Badge } from "~/components/ui/badge";
-import { Button } from "~/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { timeOffRequests, userTimeOffBalance } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";

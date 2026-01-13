@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import { Button } from "@repo/ui/components/button";
 import {
   ArrowRight,
   Bell,
@@ -8,7 +9,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "~/components/ui/button";
 import {
   Card,
   CardContent,
