@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import type { DragEvent, FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
   FileText,
@@ -13,13 +20,6 @@ import {
   Settings,
   Trash2,
 } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "~/components/ui/card";
 import {
   Dialog,
   DialogContent,

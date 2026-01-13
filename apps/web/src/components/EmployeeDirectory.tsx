@@ -2,15 +2,15 @@ import { useState } from "react";
 import type { FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
-import { ArrowRight, Users } from "lucide-react";
-import { Link } from "react-router-dom";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "~/components/ui/card";
+} from "@repo/ui/components/card";
+import { ArrowRight, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import { employees } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";
 

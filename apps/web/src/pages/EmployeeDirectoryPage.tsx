@@ -2,6 +2,12 @@ import { useState } from "react";
 import type { FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
   ArrowLeft,
@@ -17,7 +23,6 @@ import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { OrganizationChart } from "~/components/OrganizationChart";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import {
   Select,
   SelectContent,

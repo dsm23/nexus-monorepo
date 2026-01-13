@@ -29,6 +29,16 @@
         "default": "./dist/cjs/button.cjs"
       }
     },
+    "./components/card": {
+      "import": {
+        "types": "./dist/es/card.d.ts",
+        "default": "./dist/es/card.js"
+      },
+      "require": {
+        "types": "./dist/cjs/card.d.cts",
+        "default": "./dist/cjs/card.cjs"
+      }
+    },
     "./components/checkbox": {
       "import": {
         "types": "./dist/es/checkbox.d.ts",

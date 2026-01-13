@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import type { FormEventHandler, FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
   AlertCircle,
@@ -27,7 +33,6 @@ import { Link, useSearchParams } from "react-router-dom";
 import { toast } from "sonner";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import {
   Dialog,
   DialogContent,
