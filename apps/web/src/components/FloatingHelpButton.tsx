@@ -3,6 +3,12 @@ import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
 import { Card, CardContent } from "@repo/ui/components/card";
 import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@repo/ui/components/dialog";
+import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
@@ -17,12 +23,6 @@ import {
   X,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "~/components/ui/dialog";
 import { helpdeskTickets } from "~/data/mockData";
 
 export const FloatingHelpButton: FunctionComponent = () => {

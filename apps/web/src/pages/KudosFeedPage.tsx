@@ -7,13 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@repo/ui/components/card";
-import { Input } from "@repo/ui/components/input";
-import { Label } from "@repo/ui/components/label";
-import { Textarea } from "@repo/ui/components/textarea";
-import { ArrowLeft, Heart, Plus, Search } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Header } from "~/components/Header";
-import { PageSection, PageWrapper } from "~/components/PageWrapper";
 import {
   Dialog,
   DialogContent,
@@ -22,7 +15,14 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "~/components/ui/dialog";
+} from "@repo/ui/components/dialog";
+import { Input } from "@repo/ui/components/input";
+import { Label } from "@repo/ui/components/label";
+import { Textarea } from "@repo/ui/components/textarea";
+import { ArrowLeft, Heart, Plus, Search } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Header } from "~/components/Header";
+import { PageSection, PageWrapper } from "~/components/PageWrapper";
 import { currentUser, kudos as initialKudos } from "~/data/mockData";
 import { formatRelativeTime, generateId } from "~/lib/utils";
 import type { Kudo } from "~/data/mockData";
