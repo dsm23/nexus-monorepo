@@ -48,6 +48,7 @@
     "@eslint/js": "9.39.2",
     "@ianvs/prettier-plugin-sort-imports": "4.7.0",
     "@repo/stylelint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
     "@total-typescript/ts-reset": "0.6.1",
     "@types/node": "24.10.4",
     "@types/react": "19.2.7",
