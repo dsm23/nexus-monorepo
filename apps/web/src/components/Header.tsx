@@ -1,6 +1,12 @@
 import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@repo/ui/components/dropdown-menu";
+import {
   BarChart3,
   Building2,
   Calendar,
@@ -19,12 +25,6 @@ import {
   Users,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "~/components/ui/dropdown-menu";
 import { useFocusMode } from "~/contexts/FocusModeContext";
 import { currentUser } from "~/data/mockData";
 import { getTimeBasedGreeting } from "~/lib/utils";
