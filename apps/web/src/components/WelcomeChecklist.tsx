@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
+import { Checkbox } from "@repo/ui/components/checkbox";
 import { Sparkles, X } from "lucide-react";
 import {
   Card,
@@ -9,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "~/components/ui/card";
-import { Checkbox } from "~/components/ui/checkbox";
 import { storage } from "~/lib/utils";
 
 interface ChecklistItem {
