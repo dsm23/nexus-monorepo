@@ -3,6 +3,11 @@ import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
 import { Card, CardContent } from "@repo/ui/components/card";
 import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@repo/ui/components/tooltip";
+import {
   AlertCircle,
   FileText,
   Headphones,
@@ -18,11 +23,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "~/components/ui/dialog";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "~/components/ui/tooltip";
 import { helpdeskTickets } from "~/data/mockData";
 
 export const FloatingHelpButton: FunctionComponent = () => {
