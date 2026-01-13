@@ -1,8 +1,8 @@
 import type { FunctionComponent } from "react";
+import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
 import { ArrowRight, Bell, CheckSquare, FileText, Info } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Badge } from "~/components/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import type { CSSProperties, FunctionComponent } from "react";
+import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
 import {
   ArrowLeft,
@@ -22,7 +23,6 @@ import {
 import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import { Badge } from "~/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
 import {
