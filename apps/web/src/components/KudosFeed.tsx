@@ -8,11 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@repo/ui/components/card";
-import { Input } from "@repo/ui/components/input";
-import { Label } from "@repo/ui/components/label";
-import { Textarea } from "@repo/ui/components/textarea";
-import { ArrowRight, Heart, Plus } from "lucide-react";
-import { Link } from "react-router-dom";
 import {
   Dialog,
   DialogContent,
@@ -21,7 +16,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "~/components/ui/dialog";
+} from "@repo/ui/components/dialog";
+import { Input } from "@repo/ui/components/input";
+import { Label } from "@repo/ui/components/label";
+import { Textarea } from "@repo/ui/components/textarea";
+import { ArrowRight, Heart, Plus } from "lucide-react";
+import { Link } from "react-router-dom";
 import { currentUser, kudos as initialKudos } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";
 import { formatRelativeTime, generateId } from "~/lib/utils";
