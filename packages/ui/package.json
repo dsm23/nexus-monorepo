@@ -59,6 +59,16 @@
         "default": "./dist/cjs/input.cjs"
       }
     },
+    "./components/tabs": {
+      "import": {
+        "types": "./dist/es/tabs.d.ts",
+        "default": "./dist/es/tabs.js"
+      },
+      "require": {
+        "types": "./dist/cjs/tabs.d.cts",
+        "default": "./dist/cjs/tabs.cjs"
+      }
+    },
     "./components/textarea": {
       "import": {
         "types": "./dist/es/textarea.d.ts",
@@ -99,6 +109,7 @@
   "dependencies": {
     "@radix-ui/react-checkbox": "1.3.3",
     "@radix-ui/react-slot": "1.2.4",
+    "@radix-ui/react-tabs": "1.1.13",
     "@radix-ui/react-tooltip": "1.2.8",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",

@@ -10,6 +10,12 @@ import {
 } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@repo/ui/components/tabs";
+import {
   ArrowLeft,
   Filter,
   Mail,
@@ -30,7 +36,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "~/components/ui/select";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { employees } from "~/data/mockData";
 
 const getDepartmentBadgeColor = (department: string) => {
