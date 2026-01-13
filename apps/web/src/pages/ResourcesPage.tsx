@@ -10,6 +10,12 @@ import {
 } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@repo/ui/components/tabs";
+import {
   ArrowLeft,
   BookOpen,
   Download,
@@ -37,7 +43,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "~/components/ui/select";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { resourceCategories, resourcesData } from "~/data/mockData";
 import type { Resource } from "~/data/mockData";
 
