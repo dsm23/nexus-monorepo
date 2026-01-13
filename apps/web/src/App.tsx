@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
+import { TooltipProvider } from "@repo/ui/components/tooltip";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "sonner";
-import { TooltipProvider } from "~/components/ui/tooltip";
 import { FloatingHelpButton } from "./components/FloatingHelpButton";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { ThemeProvider } from "./components/ThemeProvider";
