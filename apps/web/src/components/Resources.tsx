@@ -1,9 +1,14 @@
 import type { FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/card";
 import { ArrowRight, Download, FileText, Star, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { resourcesData } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
+import { Card, CardContent } from "@repo/ui/components/card";
 import {
   AlertCircle,
   FileText,
@@ -11,7 +12,6 @@ import {
   X,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Card, CardContent } from "~/components/ui/card";
 import {
   Dialog,
   DialogContent,

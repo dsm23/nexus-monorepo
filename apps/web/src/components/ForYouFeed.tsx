@@ -1,6 +1,13 @@
 import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
 import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/card";
+import {
   ArrowRight,
   Bell,
   CheckSquare,
@@ -9,13 +16,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "~/components/ui/card";
 import { forYouFeed } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";
 import { formatRelativeTime } from "~/lib/utils";

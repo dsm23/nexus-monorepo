@@ -1,9 +1,14 @@
 import { useEffect, useRef } from "react";
 import type { FunctionComponent, ReactElement } from "react";
 import { Badge } from "@repo/ui/components/badge";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/card";
 import { Crown, Shield, User, Users } from "lucide-react";
 import { Tree, TreeNode } from "react-organizational-chart";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { employees } from "~/data/mockData";
 import type { Employee } from "~/data/mockData";
 

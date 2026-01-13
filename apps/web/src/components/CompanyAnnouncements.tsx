@@ -1,15 +1,15 @@
 import type { FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
-import { AlertCircle, ArrowRight, Info, Megaphone } from "lucide-react";
-import { Link } from "react-router-dom";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "~/components/ui/card";
+} from "@repo/ui/components/card";
+import { AlertCircle, ArrowRight, Info, Megaphone } from "lucide-react";
+import { Link } from "react-router-dom";
 import { announcements } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";
 import { formatRelativeTime } from "~/lib/utils";

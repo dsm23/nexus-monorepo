@@ -1,12 +1,17 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import { ArrowLeft, Heart, Plus, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import {
   Dialog,
   DialogContent,
