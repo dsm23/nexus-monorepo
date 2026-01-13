@@ -49,6 +49,16 @@
         "default": "./dist/cjs/checkbox.cjs"
       }
     },
+    "./components/label": {
+      "import": {
+        "types": "./dist/es/label.d.ts",
+        "default": "./dist/es/label.js"
+      },
+      "require": {
+        "types": "./dist/cjs/label.d.cts",
+        "default": "./dist/cjs/label.cjs"
+      }
+    },
     "./components/input": {
       "import": {
         "types": "./dist/es/input.d.ts",
@@ -108,6 +118,7 @@
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "1.3.3",
+    "@radix-ui/react-label": "2.1.8",
     "@radix-ui/react-slot": "1.2.4",
     "@radix-ui/react-tabs": "1.1.13",
     "@radix-ui/react-tooltip": "1.2.8",
