@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { CSSProperties, FormEventHandler, FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
+import { Input } from "@repo/ui/components/input";
 import {
   AlertCircle,
   ArrowLeft,
@@ -29,7 +30,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "~/components/ui/dialog";
-import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
 import {
   Select,

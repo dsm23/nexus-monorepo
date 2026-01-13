@@ -39,6 +39,16 @@
         "default": "./dist/cjs/checkbox.cjs"
       }
     },
+    "./components/input": {
+      "import": {
+        "types": "./dist/es/input.d.ts",
+        "default": "./dist/es/input.js"
+      },
+      "require": {
+        "types": "./dist/cjs/input.d.cts",
+        "default": "./dist/cjs/input.cjs"
+      }
+    },
     "./lib/utils": {
       "import": {
         "types": "./dist/es/utils.d.ts",

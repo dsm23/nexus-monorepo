@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
+import { Input } from "@repo/ui/components/input";
 import { ArrowRight, Heart, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
@@ -19,7 +20,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "~/components/ui/dialog";
-import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
 import { Textarea } from "~/components/ui/textarea";
 import { currentUser, kudos as initialKudos } from "~/data/mockData";
