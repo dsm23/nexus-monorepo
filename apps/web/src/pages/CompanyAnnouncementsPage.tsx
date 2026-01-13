@@ -10,6 +10,13 @@ import {
 } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@repo/ui/components/select";
+import {
   AlertCircle,
   ArrowLeft,
   Filter,
@@ -20,13 +27,6 @@ import {
 import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "~/components/ui/select";
 import { announcements } from "~/data/mockData";
 import { formatRelativeTime } from "~/lib/utils";
 import type { Announcement } from "~/data/mockData";

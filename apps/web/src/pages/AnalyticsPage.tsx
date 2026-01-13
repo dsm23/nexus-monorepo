@@ -8,6 +8,13 @@ import {
   CardTitle,
 } from "@repo/ui/components/card";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@repo/ui/components/select";
+import {
   Tabs,
   TabsContent,
   TabsList,
@@ -43,13 +50,6 @@ import {
 } from "recharts";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "~/components/ui/select";
 import {
   activityData,
   analyticsMetrics,
