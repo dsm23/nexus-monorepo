@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { DragEvent, FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
+import { Input } from "@repo/ui/components/input";
 import {
   FileText,
   Globe,
@@ -28,7 +29,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "~/components/ui/dialog";
-import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
 import { defaultQuickLinks } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";

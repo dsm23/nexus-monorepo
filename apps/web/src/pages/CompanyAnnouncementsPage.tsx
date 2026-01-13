@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
+import { Input } from "@repo/ui/components/input";
 import {
   AlertCircle,
   ArrowLeft,
@@ -14,7 +15,6 @@ import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
-import { Input } from "~/components/ui/input";
 import {
   Select,
   SelectContent,
