@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
+import { Textarea } from "@repo/ui/components/textarea";
 import {
   AlertCircle,
   ArrowLeft,
@@ -49,7 +50,6 @@ import {
   SelectValue,
 } from "~/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
-import { Textarea } from "~/components/ui/textarea";
 import {
   helpdeskCategories,
   helpdeskKnowledgeBase,

@@ -59,6 +59,16 @@
         "default": "./dist/cjs/input.cjs"
       }
     },
+    "./components/textarea": {
+      "import": {
+        "types": "./dist/es/textarea.d.ts",
+        "default": "./dist/es/textarea.js"
+      },
+      "require": {
+        "types": "./dist/cjs/textarea.d.cts",
+        "default": "./dist/cjs/textarea.cjs"
+      }
+    },
     "./lib/utils": {
       "import": {
         "types": "./dist/es/utils.d.ts",

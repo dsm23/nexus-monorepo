@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
+import { Textarea } from "@repo/ui/components/textarea";
 import {
   AlertCircle,
   ArrowLeft,
@@ -43,7 +44,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "~/components/ui/select";
-import { Textarea } from "~/components/ui/textarea";
 import { projects } from "~/data/mockData";
 import { generateId } from "~/lib/utils";
 import type { Project } from "~/data/mockData";

@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
+import { Textarea } from "@repo/ui/components/textarea";
 import { ArrowRight, Heart, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
@@ -21,7 +22,6 @@ import {
   DialogTrigger,
 } from "~/components/ui/dialog";
 import { Label } from "~/components/ui/label";
-import { Textarea } from "~/components/ui/textarea";
 import { currentUser, kudos as initialKudos } from "~/data/mockData";
 import { useWaveAnimation } from "~/hooks/useWaveAnimation";
 import { formatRelativeTime, generateId } from "~/lib/utils";
