@@ -10,6 +10,13 @@ import {
 } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@repo/ui/components/select";
+import {
   Tabs,
   TabsContent,
   TabsList,
@@ -29,13 +36,6 @@ import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { OrganizationChart } from "~/components/OrganizationChart";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "~/components/ui/select";
 import { employees } from "~/data/mockData";
 
 const getDepartmentBadgeColor = (department: string) => {

@@ -4,6 +4,13 @@ import { Button } from "@repo/ui/components/button";
 import { Card, CardContent } from "@repo/ui/components/card";
 import { Input } from "@repo/ui/components/input";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@repo/ui/components/select";
+import {
   ArrowLeft,
   Award,
   Cake,
@@ -16,13 +23,6 @@ import {
 import { Link } from "react-router-dom";
 import { Header } from "~/components/Header";
 import { PageSection, PageWrapper } from "~/components/PageWrapper";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "~/components/ui/select";
 import { calendarEvents } from "~/data/mockData";
 import type { CalendarEvent } from "~/data/mockData";
 
