@@ -59,6 +59,16 @@
         "default": "./dist/cjs/dialog.cjs"
       }
     },
+    "./components/dropdown-menu": {
+      "import": {
+        "types": "./dist/es/dropdown-menu.d.ts",
+        "default": "./dist/es/dropdown-menu.js"
+      },
+      "require": {
+        "types": "./dist/cjs/dropdown-menu.d.cts",
+        "default": "./dist/cjs/dropdown-menu.cjs"
+      }
+    },
     "./components/input": {
       "import": {
         "types": "./dist/es/input.d.ts",
@@ -139,6 +149,7 @@
   "dependencies": {
     "@radix-ui/react-checkbox": "1.3.3",
     "@radix-ui/react-dialog": "1.1.15",
+    "@radix-ui/react-dropdown-menu": "2.1.16",
     "@radix-ui/react-label": "2.1.8",
     "@radix-ui/react-select": "2.2.6",
     "@radix-ui/react-slot": "1.2.4",

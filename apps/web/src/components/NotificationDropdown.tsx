@@ -1,13 +1,13 @@
 import type { FunctionComponent } from "react";
 import { Badge } from "@repo/ui/components/badge";
 import { Button } from "@repo/ui/components/button";
-import { ArrowRight, Bell, CheckSquare, FileText, Info } from "lucide-react";
-import { Link } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "~/components/ui/dropdown-menu";
+} from "@repo/ui/components/dropdown-menu";
+import { ArrowRight, Bell, CheckSquare, FileText, Info } from "lucide-react";
+import { Link } from "react-router-dom";
 import { forYouFeed } from "~/data/mockData";
 import { formatRelativeTime } from "~/lib/utils";
 import type { FeedItem } from "~/data/mockData";

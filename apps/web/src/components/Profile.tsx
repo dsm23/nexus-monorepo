@@ -1,6 +1,14 @@
 import type { FunctionComponent } from "react";
 import { Button } from "@repo/ui/components/button";
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@repo/ui/components/dropdown-menu";
+import {
   Bell,
   FileText,
   Heart,
@@ -11,14 +19,6 @@ import {
   Shield,
   User,
 } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "~/components/ui/dropdown-menu";
 import { currentUser } from "~/data/mockData";
 
 export const Profile: FunctionComponent = () => {

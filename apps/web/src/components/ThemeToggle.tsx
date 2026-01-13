@@ -1,12 +1,12 @@
 import type { MouseEvent } from "react";
 import { Button } from "@repo/ui/components/button";
-import { Moon, Sun } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "~/components/ui/dropdown-menu";
+} from "@repo/ui/components/dropdown-menu";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "~/hooks/useTheme";
 
 export function ThemeToggle() {
