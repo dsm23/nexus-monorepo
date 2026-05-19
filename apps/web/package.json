@@ -29,7 +29,7 @@
     "tailwindcss": "4.1.18"
   },
   "devDependencies": {
-    "@eslint/js": "9.39.3",
+    "@eslint/js": "9.39.4",
     "@ianvs/prettier-plugin-sort-imports": "4.7.0",
     "@repo/stylelint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
@@ -38,9 +38,9 @@
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "5.1.2",
-    "eslint": "9.39.3",
+    "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-react-refresh": "0.5.2",
     "globals": "17.0.0",
     "npm-run-all2": "8.0.4",
@@ -49,7 +49,7 @@
     "prettier-plugin-tailwindcss": "0.7.2",
     "typed-query-selector": "2.12.0",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.56.1",
+    "typescript-eslint": "8.59.3",
     "vite": "7.3.1",
     "vite-tsconfig-paths": "6.0.3"
   }
