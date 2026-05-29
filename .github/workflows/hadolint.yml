@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   hadolint-shard:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         apps: [web]
@@ -38,7 +38,7 @@ jobs:
           dockerfile: ./apps/${{ matrix.apps }}/Dockerfile
 
   hadolint:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     needs:
       - hadolint-shard
     steps:
